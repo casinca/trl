@@ -310,6 +310,7 @@ class TestIsChatTemplatePrefixPreserving:
 @pytest.mark.parametrize(
     "tokenizer_name",
     [
+        pytest.param("trl-internal-testing/tiny-Glm4MoeForCausalLM", id="glm4moe"),
         pytest.param("trl-internal-testing/tiny-GptOssForCausalLM", id="gptoss"),
         pytest.param("trl-internal-testing/tiny-LlamaForCausalLM-3", id="llama3"),
         pytest.param("trl-internal-testing/tiny-Qwen3MoeForSequenceClassification", id="qwen3"),
